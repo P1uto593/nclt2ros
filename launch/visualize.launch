@@ -1,0 +1,22 @@
+<launch>
+    # visualize
+    <node name="nclt2rosbag" pkg="nclt2ros" type="nclt2visualizer" output="screen">
+
+        <param name="date"          value="2013-01-10"/>
+        <param name="raw_data_path" value="/home/sheng/dataset" />
+        <param name="plot_path"     value="/home/sheng/plots" />
+
+        <param name="show_plot"     value="True" />
+
+        <param name="gt_kml"        value="True" />
+        <param name="gt_png"        value="True" />
+        <param name="gps_kml"       value="True" />
+        <param name="gps_png"       value="True" />
+        <param name="gps_rtk_kml"   value="True" />
+        <param name="gps_rtk_png"   value="True" />
+        <param name="odom_kml"      value="True" />
+        <param name="odom_png"      value="True" />
+        <param name="all"           value="True" />
+
+    </node>
+</launch>
